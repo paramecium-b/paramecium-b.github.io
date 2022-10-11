@@ -1,0 +1,22 @@
+html {
+    background-color: #532ABB;
+}
+
+.flex {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+.m {
+    padding: 30px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    color: #F5F5F5;
+}
+
+.cat {
+    padding: 30px;
+}

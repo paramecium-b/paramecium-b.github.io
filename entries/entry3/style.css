@@ -1,0 +1,479 @@
+html {
+    background-color: #F1F1F1;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header-grid {
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+}
+
+.he-who-came {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    text-shadow:
+        0 0 1px,
+        0 0 1px,
+        0 0 1px,
+        0 0 1px;
+    position: absolute;
+    z-index: 1;
+}
+
+.grid1-left {
+    padding: 20px;
+    padding-left: 60px;
+    text-align: left;
+    z-index: 1;
+}
+
+.grid1-right {
+    padding: 20px;
+    padding-right: 60px;
+    text-align: right;
+    z-index: 1;
+}
+.grid1 {
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.bg1 {
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 90px;
+    padding: 20px;
+    padding-top: 65px;
+    transform: scale(1,10);
+    color: #F1F1F1;
+    text-shadow:
+        0 0 1px #1F271E,
+        0 0 1px #1F271E,
+        0 0 1px #1F271E,
+        0 0 1px #1F271E;
+}
+
+.bg1 {
+    overflow: hidden;
+    border-right: .15cm solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15cm;
+    animation: 
+        typing 3.5s steps(40, end), 
+        blink-caret .75s step-end infinite; 
+}
+
+@keyframes typing {
+    from { width: 0}
+    to { width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent}
+    50% {border-color: black}
+}
+
+.paragraph1 {
+    position: relative;
+    height: auto;
+    width: 1369px;
+    top: 710px;
+    right: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+    font-size: 25px;
+    text-align: right;
+    z-index: 2;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+.vertical {
+    border-left: 2px solid #1F271E;
+    height: 320px;
+    position: absolute;
+    left: 150px;
+    margin-left: -3px;
+    top: 770px;
+}
+
+.to-save {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    text-shadow:
+        0 0 1px,
+        0 0 1px,
+        0 0 1px,
+        0 0 1px;
+    position: absolute;
+    top: 1000px;
+    z-index: 1;
+}
+
+.grid2-left {
+    padding: 20px;
+    padding-left: 60px;
+    text-align: left;
+    z-index: 1;
+}
+
+.grid2-right {
+    padding: 20px;
+    padding-right: 60px;
+    text-align: right;
+    z-index: 1;
+}
+.grid2 {
+    padding: 20px;
+    text-align: center;
+    left: 100px;
+    z-index: 1;
+}
+
+.me {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    text-shadow:
+        0 0 1px,
+        0 0 1px,
+        0 0 1px,
+        0 0 1px;
+    position: absolute;
+    top: 2100px;
+    z-index: 1;
+}
+
+.grid3-right {
+    padding: 20px;
+    padding-right: 60px;
+    text-align: right;
+    z-index: 1;
+}
+
+.box1 {
+    position: absolute;
+    top: 1055px;
+    left: 101px;
+    height: 512px;
+    width: 740px;
+    border: 2px solid #1F271E;
+}
+
+.quote1 {
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 1150px;
+    left: 149px;
+}
+
+.img2 {
+    position: absolute;
+    top: 1720px;
+    left: 95px;
+    z-index: 0;
+}
+
+/* had some problems with this section. will visit later*/
+
+.exp {
+    position: absolute;
+    top: 1720px;
+    left: 101px;
+    height: 50px;
+    width: 600px;
+    background-color:#000000;
+    color:#F1F1F1;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+    font-size: 25px;
+}
+
+.exp {
+    display: none;
+}
+
+.img2:hover + .exp {
+    display: block;
+}
+
+/* I tried to make <div class="exp"> appear when hover over <div class="he-who-came"> but I couldn't do it. I'll try it again next week*/
+
+.horizontal {
+    width: 500px;
+    position: absolute;
+    left: 790px;
+    top: 1365px;
+    border: 1px dashed #1F271E;
+}
+
+.one {
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    color: #F1F1F1;
+    font-size: 70px;
+    text-shadow:
+        0 0 2px #1F271E,
+        0 0 2px #1F271E,
+        0 0 2px #1F271E,
+        0 0 2px #1F271E;
+    position: absolute;
+    top: 1390px;
+    left: 576px;
+    z-index: 3;
+}
+
+.t1 {
+    padding: 30px;
+    height: 1600px;
+    width: 330px;
+    position: absolute;
+    top: 1450px;
+    left: 530px;
+    z-index: 2;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+    font-size: 24px;
+    text-align: left;
+    text-shadow:
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1;
+}
+
+.heart {
+    position: absolute;
+    top: 1658px;
+    left: 1068px;
+}
+
+.globe {
+    position: absolute;
+    top: 1365px;
+    left: 710px;
+    z-index: -1;
+}
+
+.please {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    color: #F1F1F1;
+    font-size: 110px;
+    text-shadow:
+        0 0 2px #1F271E,
+        0 0 2px #1F271E,
+        0 0 2px #1F271E,
+        0 0 2px #1F271E;
+    position: absolute;
+    top: 2800px;
+    z-index: 1;
+    padding-left: 200px;
+}
+
+.grid4-left {
+    padding: 20px;
+    padding-left: 60px;
+    text-align: right;
+    z-index: 1;
+}
+
+.im-just-a {
+    width: 99.1%;
+    text-align: center;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    position: absolute;
+    top: 3280px;
+}
+
+.eye {
+    position: absolute;
+    top: 3530px;
+    left: 305px;
+}
+
+.two {
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    color: #F1F1F1;
+    font-size: 70px;
+    text-shadow:
+        0 0 2px #1F271E,
+        0 0 2px #1F271E,
+        0 0 2px #1F271E,
+        0 0 2px #1F271E;
+    position: absolute;
+    top: 3630px;
+    left: 95px;
+    z-index: 3;
+}
+
+.t2-1 {
+    padding: 30px;
+    height: 214px;
+    width: 444px;
+    position: absolute;
+    top: 3734px;
+    left: 65px;
+    z-index: 2;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+    font-size: 25px;
+    text-align: left;
+    text-shadow:
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1;
+}
+
+.t2-2 {
+    padding: 30px;
+    height: 132px;
+    width: 1013px;
+    position: absolute;
+    top: 3934px;
+    left: 65px;
+    z-index: 2;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+    font-size: 25px;
+    text-align: left;
+    text-shadow:
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1;
+}
+
+.damsel {
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    text-align: right;
+    position: absolute;
+    top: 3662px;
+    left: 744px;
+}
+
+.in {
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    text-align: left;
+    position: absolute;
+    top: 4200px;
+    left: 517px;
+}
+
+.t2-4 {
+    padding: 30px;
+    height: 217px;
+    width: 1100px;
+    position: absolute;
+    top: 4345px;
+    left: 237px;
+    z-index: 2;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+    font-size: 25px;
+    text-align: right;
+    text-shadow:
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1,
+        8px 8px 8px #F1F1F1;
+}
+
+.distress {
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 110px;
+    text-align: left;
+    position: absolute;
+    top: 5146px;
+    left: 74px;
+}
+
+.candy {
+    position: absolute;
+    top: 4270px;
+    z-index: -1;
+}
+
+.vertical2 {
+    border-left: 2px solid #1F271E;
+    height: 1240px;
+    position: absolute;
+    left: 1260px;
+    margin-left: -3px;
+    top: 3995px;
+}
+
+.vertical3 {
+    border-left: 2px solid #1F271E;
+    height: 212px;
+    position: absolute;
+    left: 735px;
+    margin-left: -3px;
+    top: 4736px;
+}
+
+.horizontal2 {
+    width: 690px;
+    position: absolute;
+    left: 732px;
+    top: 4736px;
+    border: 1px solid #1F271E;
+}
+
+.horizontal3 {
+    width: 690px;
+    position: absolute;
+    left: 732px;
+    top: 4948px;
+    border: 1px solid #1F271E;
+}
+
+.and-then {
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 4695px;
+    left: 845px;
+}
+
+.i-woke-up {
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 4865px;
+    left: 845px;
+}

@@ -1,0 +1,111 @@
+html {
+    background: url(./imgs/bg.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: #ADFF00;
+    font-family: "Asset", "Arial", Helvetica, sans-serif;
+    font-size: 100px;
+    text-shadow:
+        -3px -3px 0 #1F271E,
+        3px -3px 0 #1F271E,
+        -3px 3px 0 #1F271E,
+        3px 3px 0 #1F271E;
+    padding-left: 50px;
+}
+p {
+    text-align: right;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #F5F5F5;
+    font-family: "Xanh Mono", "Arial", Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.alignleft {
+    bottom: 0;
+    float: left;
+    font-family: "Lato", "Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.alignright {
+    bottom: 0;
+    float: right;
+    font-family: "Lato", "Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.diff {
+    text-align: center;
+    font-family: "Lato", "Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#p {
+    position: absolute;
+    width: 1920px;
+    height: 500px;
+    top: 1000px;
+}
+
+.e {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    padding: 200px;
+}
+
+.a {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 315px;
+    left: 50px;
+    opacity: 100%;
+}
+
+.a:hover {
+    opacity: 0%;
+    transition: 3s;
+}
+
+.o {
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    height: 350px;
+    top: 1150px;
+    right: 50px;
+    opacity: 100%;
+}
+
+.o:hover {
+    opacity: 0%;
+    transition: 2s;
+}
+
+.i {
+    position: absolute;
+    z-index: 1;
+    padding: 240px;
+    left: 280px;
+}
+
+.lol {
+    position: absolute;
+    z-index: 0;
+    left: 50px;
+    top: 950px;
+}
+
+.lal {
+    position: absolute;
+    z-index: 0;
+    top: 1300px;
+    right: 90px;
+}
