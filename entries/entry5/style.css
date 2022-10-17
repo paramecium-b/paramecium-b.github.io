@@ -136,7 +136,7 @@ html {
 .l {
     position: absolute;
     top: 287px;
-    left: 470px;
+    right: 12px;
     mix-blend-mode: soft-light;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
