@@ -1,0 +1,167 @@
+html {
+    background-color: black;
+}
+
+.headgrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+}
+
+.head1 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #F5F5F5;
+}
+
+.hd {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #F5F5F5;
+    padding-top: 100px;
+    background-color: black;
+    width: auto;
+    height: auto;
+    z-index: 2;
+}
+
+.horizontal {
+    width: 900px;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    border: 1px solid #F5F5F5;
+}
+
+.h2 {
+    width: 490px;
+    position: absolute;
+    right: 60px;
+    top: 790px;
+    border: 1px solid #F5F5F5;
+}
+
+.h3 {
+    width: 490px;
+    position: absolute;
+    left: 60px;
+    top: 790px;
+    border: 1px solid #F5F5F5;
+}
+
+.v1 {
+    height: 1250px;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #F5F5F5;
+}
+
+.v2 {
+    height: 1210px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    margin-bottom: 60px;
+    border: 1px solid #F5F5F5;
+}
+
+.en {
+    padding: 80px;
+    margin-bottom: 40px;
+}
+
+.box {
+    padding: 2em;
+    margin-left: 40px;
+    margin-top: 40px;
+    border: 3px solid #F5F5F5;
+    display: block;
+    width: 130px;
+    height: 90px;
+    float: left;
+    color: #F5F5F5;
+    background: linear-gradient(
+        black, black 50%, #F5F5F5 50%, #F5F5F5);
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+}
+
+.e {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.des {
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    
+    color: #F5F5F5;
+}
+
+.box:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+}
+
+.box:hover .e {
+    color: black;
+}
+
+.box:hover .des {
+    color: black;
+}
+
+@keyframes up-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 1.5em; }
+    100% { padding-top: 2em; }
+}
+
+  @keyframes down-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 2.5em; }
+    100% { padding-top: 2em; }
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: none;
+    text-decoration: none;
+}
+a:hover{
+    color: none;
+    text-decoration: none;
+}
+a:focus{
+    color: none;
+    text-decoration: none;
+}
+a:active{
+    color: none;
+    text-decoration: none;
+}
