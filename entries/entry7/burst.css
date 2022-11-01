@@ -1,0 +1,74 @@
+html {
+    background: #202020;
+}
+
+.flexbox {
+    margin: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95vw;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    color: #F5F5F5;
+}
+
+.text {
+    flex: 20%;
+}
+
+@media screen and (max-width: 1300px) {
+    .text {
+        flex: 25%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .text {
+        flex: 33%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .text {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text {
+        flex: 100%;
+    }
+}
+
+.back {
+    margin: 3vw;
+    padding-top: 8vw;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    color: #F5F5F5;
+}
+
+a:link{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+a:visited{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+a:hover{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+a:focus{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+a:active{
+    color: #F5F5F5;
+    text-decoration: none;
+}
