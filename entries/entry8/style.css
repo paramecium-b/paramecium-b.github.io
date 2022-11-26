@@ -1,7 +1,15 @@
-html {
-    background-color: #000;
+.video {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
-#bg {
-    max-width: 100%;
+.videobg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }

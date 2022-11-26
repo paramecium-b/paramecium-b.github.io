@@ -10,31 +10,52 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="jquery.js"></script>
 </head>
 
 <body>
     <!-- R1 PAGE -->
-    <div class="header-flex">
-        <div class="flex1">< REPOSITORY</div>
-        <div class="flex2">ENTRY 9: THE PORTAL TO––</div>
-        <div class="flex3">A PARALLEL UNIVERSE</div>
-    </div>
 
-    <div class="landing-photo-elements">
+    <div id="container1" class="container">
+        <div class="header-flex">
+            <div class="flex1">< REPOSITORY</div>
+            <div class="flex2">ENTRY 9: THE PORTAL TO––</div>
+            <div class="flex3">A PARALLEL UNIVERSE</div>
+        </div>
+        <div class="landing-border">
+            <div class="landing-photo-grid">
+                <div class="div1">[1] the station</div>
+                <div class="div2">[2] the room</div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+                <div class="div5"></div>
+                <div class="div6">
+                    I’ve had dreams about actual events I experienced in the day, but with an insanely crazy perspective to them; one I would say is true to my feelings upon reflection.<br>
+                     <br>
+                    Explore this page to see my most memorable examples.<br>
+                     <br>
+                    Toggle [ENTER]/[EXIT] to view the difference between my reality vs. dreams. 
+                </div>
+            </div>
+        </div>
 
-    </div>
-    <div class="landing-bottom">
-        <div class="landing-title">REALITY</div>
-        <div id="switch-button"></div>
+        <div class="realityswitchgrid">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            
+            <div class="landing-title">REALITY</div>
+        </div>
     </div>
 
     <!-- D1 PAGE -->
 
 
     <!-- R2 PAGE -->
-    <div class="R2-page-wrap">
+    
+    <div class="PAGE2">
         <div class="R2-page-grid">
             <div class="R2-page-title">[1]––THE STATION</div>
             <div class="R2-page-img">
@@ -47,23 +68,23 @@
             <div class="R2-page-note">Note:</div>
             <div class="R2-page-note-written">
                 I quietly wandered around the empty station on a Saturday morning, headphones on, Poltergeist! blasting through my ears.<br>
-                 <br>
+                <br>
                 I had to get some footages of the station for one of my classes. It was kinda scary because literally no one was there but me. Cold, too, I stood right in front of the stair entrance which had crazy wind coming through.<br>
-                 <br>
+                <br>
                 There were a few people setting up their farmer's market stall upstairs. At this time? In this weather? They're quite brave.<br>
-                 <br>
+                <br>
                 I can't wait to finish this assignment.
             </div>
             <div class="R2-page-cam">Camera information:</div>
             <div class="R2-page-cam-written">Iphone 12 | ISO 500 | 19mm</div>
         </div>
     </div>
-
+    
     <!-- D2 PAGE -->
 
 
     <!-- R3 PAGE -->
-    <div class="R3-page-wrap">
+    <div class="PAGE3">
         <div class="R3-page-grid">
             <div class="R3-page-title">[2]––THE ROOM––</div>
             <div class="R3-page-img">
@@ -94,7 +115,7 @@
     
     
     <!-- R4 PAGE -->
-    <div class="R4-page-wrap">
+    <div class="PAGE4">
         <div class="R4-page-title">YOUR TURN</div>
         <div class="R4-instruction">Share a time where a dream took context from your real life experience:</div>
         <canvas id="canvas"></canvas>
