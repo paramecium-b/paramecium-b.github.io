@@ -37,7 +37,10 @@ html {
     display: hidden;
 }
 
-
+.button {
+    background-color: none;
+    border: none;
+}
 
 .title {
     position: absolute;
@@ -70,4 +73,25 @@ html {
     right: -2vw;
     bottom: -10vh;
     transform: rotate(30.76deg);
+}
+
+a:link{
+    color: #000;
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+a:focus{
+    color: #000;
+    text-decoration: none;
+}
+a:active{
+    color: #000;
+    text-decoration: none;
 }
