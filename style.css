@@ -52,19 +52,21 @@ span {
     margin-top: -8px;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     width: fit-content;
+    height: auto;
 }
 
 .title {
     background-color: #DF00FE;
 }
 
-.header {
-    font-family: pixeloid;
+/* .header {
+    font-family: mono;
     font-size: 5rem;
     color: #D9D9D9;
     margin: 2rem;
-}
+} */
 
 .about {
     display: flex;
@@ -75,6 +77,7 @@ span {
 .about-text {
     display: flex;
     flex-direction: column;
+    color: #FFE500;
 }
 
 .text {
@@ -122,10 +125,12 @@ span {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: -8px;
+    width: 94vw;
+    bottom: 0;
 }
 
 a:link{
@@ -195,5 +200,6 @@ a:active{
         align-items: center;
         text-align: center;
         justify-content: center;
+        width: 84vw;
     }
 }
