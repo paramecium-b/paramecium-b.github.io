@@ -8,80 +8,113 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-  <div class="headgrid">
-    <div class="head1">
-      DREAM LAB REPOSITORY
+<body id="bg">
+  <div class="title navigation">
+    <button><a href="https://paramecium-b.github.io">[DREAM LAB] <span>* repository</span></a></button>
+    <button><a href="#about">ABOUT</a></button>
+    <button><a href="#index">INDEX</a></button>
+    <button><a href="#contact">CONTACT</a></button>
+  </div>
+  <section class="header">
+    DREAM [F] LAB
+  </section>
+  <section class="body">
+    <div class="about" id="about">
+      <div class="introVideo">
+        <video width="900" height="auto" controls>
+          <source src="./imgs/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="about-text">
+        <div class="title">
+          &nbsp;&nbsp;Introduction of <em>DREAM LAB</em>
+        </div>
+        <div class="text">
+          <em>DREAM [F] LAB</em> is an ongoing web directory that explores the borders between Dream and Reality. It documents my most memorable dreams using visual and auditory stimuli. Make your way through the dreams using the index below, or use the "next" button at the end of each dream entries to move back/forward. <br>
+          <br>
+          Watch the film to the left for an introduction to <em>DREAM [F] LAB</em>. (No sound)<br>
+          <br>
+          <span>[The video retells the dream of a random subject whom the researchers monitored. They were shown as an introverted, anti-social person who willingly trapped themselves inside the sweet façade of their bedroom until it collapsed. It is hinted that an unnatural force interfered with their dream. The subtitle is a researcher's perspective, in which they explain the evolution of a dream in a cold, neutral tone.]</span><br>
+          <br>
+          <em>DREAM [F] LAB</em> is an extension of this film I did for Time class as a Parsons freshman, presenting itself as the researcher's log.<br>
+          <br>
+          This website runs best on Chrome desktop. Certain effects might fail to load if run on other browsers.<br><br>
+
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="index" id="index">
+      <div class="repository">Repository</div>
+      <a href="entries/entry1/index.html"><div class="block">
+        Entry 1
+      </div></a>
+      <a href="entries/entry2/index.html"><div class="block">Entry 2</div></a>
+      <a href="entries/entry3/index.html"><div class="block">Entry 3</div></a>
+      <a href="entries/entry4/index.html"><div class="block">Entry 4</div></a>
+      <a href="entries/entry5/index.html"><div class="block">Entry 5</div></a>
+      <a href="entries/entry6/index.html"><div class="block">Entry 6</div></a>
+      <a href="entries/entry7/index.html"><div class="block">Entry 7</div></a>
+      <a href="entries/entry8/index.html"><div class="block">Entry 8</div></a>
+      <a href="entries/entry9/index.html"><div class="block">Entry 9</div></a>
+      <a href="entries/entry10/index.html"><div class="block">Entry 10</div></a>
+      <a href=""><div class="block">Entry 11</div></a>
+      <a href=""><div class="block">Entry 12</div></a>
+      <a href=""><div class="block">Entry 13</div></a>
+      <a href=""><div class="block">Entry 14</div></a>
+      <a href=""><div class="block">Entry 15</div></a>
+      <a href=""><div class="block">Entry 16</div></a>
+      <a href=""><div class="block">Entry 17</div></a>
+      <a href=""><div class="block">Entry 18</div></a>
+      <a href=""><div class="block">Entry 19</div></a>
+      <a href=""><div class="block">Entry 20</div></a>
+      <a href=""><div class="block">Entry 21</div></a>
+      <a href=""><div class="block">Entry 22</div></a>
+      <a href=""><div class="block">Entry 23</div></a>
+      <a href=""><div class="block">Entry 24</div></a>
+      <a href=""><div class="block">Entry 25</div></a>
+      <a href=""><div class="block">Entry 26</div></a>
+      <a href=""><div class="block">Entry 27</div></a>
+      <a href=""><div class="block">Entry 28</div></a>
+      <a href=""><div class="block">Entry 29</div></a>
+      <a href=""><div class="block">Entry 30</div></a>
+      <a href=""><div class="block">Entry 31</div></a>
+      <a href=""><div class="block">Entry 32</div></a>
+      <a href=""><div class="block">Entry 33</div></a>
+      <a href=""><div class="block">Entry 34</div></a>
+      <a href=""><div class="block">Entry 35</div></a>
+    </div>
+  </section>
+  <footer id="contact" class="title">
+    <div>If anything goes wrong, contact Anna for maintenance:</div>
+    <div><a href="https://www.instagram.com/annnnnabui/?hl=af">@annnnnabui</a></div>
+    <div><a href="mailto:buip150@newschool.edu?subject=Bug%20found%20on%20Dream%20Lab">buip150@newschool.edu</a></div>
+  </footer>
 
-  <div class="horizontal"></div>
-  <div class="v1"></div>
-  <div class="v2"></div>
+  <script>
+    const divs = document.getElementsByClassName("block");
 
-  <div class="video">
-    <video width="auto" height="548" controls style="padding-left: 15%">
-      <source src="./imgs/video.mp4" type="video/mp4">
-    </video>
-  </div>
+    // background color
+    let gValue = 0;
 
-  <div class="hd">
-    Observational Reports
-  </div>
-  <div class="h2"></div>
-  <div class="h3"></div>
-  
-  <div class="en">
-    <a href="entries/entry1/index.html" class="box">
-      <div class="e">ENTRY 1</div>
-      <div class="des">the glass staircase</div>
-    </a>
-    
-    <a href="entries/entry2/index.html" class="box">
-      <div class="e">ENTRY 2</div>
-      <div class="des">the portrait hallway</div>
-    </a>
+    for (let i = 0; i < divs.length; i++) {
+      const div = divs[i];
+      const colorCode = `rgb(223, ${gValue}, 255)`;
+      div.style.backgroundColor = colorCode;
+      gValue += 7;
 
-    <a href="entries/entry3/index.html" class="box">
-      <div class="e">ENTRY 3</div>
-      <div class="des">he who came to save me</div>
-    </a>
+      // Check if the div was previously clicked and apply the appropriate style
+      const isClicked = localStorage.getItem(`block-${i}`);
+      if (isClicked === "true") {
+        div.classList.add("clicked");
+      }
 
-    <a href="entries/entry4/index.html" class="box">
-      <div class="e">ENTRY 4</div>
-      <div class="des">cat by the beach</div>
-    </a>
-
-    <a href="entries/entry5/index.html" class="box">
-      <div class="e">ENTRY 5</div>
-      <div class="des">a zombie apocalypse</div>
-    </a>
-
-    <a href="entries/entry6/index.html" class="box">
-      <div class="e">ENTRY 6</div>
-      <div class="des">dream in a dream</div>
-    </a>
-
-    <a href="entries/entry7/index.html" class="box">
-      <div class="e">ENTRY 7</div>
-      <div class="des">i come home, just to visit</div>
-    </a>
-
-    <a href="entries/entry8/index.html" class="box">
-      <div class="e">ENTRY 8</div>
-      <div class="des">maze</div>
-    </a>
-
-    <a href="entries/entry9/index.html" class="box">
-      <div class="e">ENTRY 9</div>
-      <div class="des">the portal to a parallel universe</div>
-    </a>
-
-    <a href="entries/entry10/index.html" class="box">
-      <div class="e">ENTRY 10</div>
-      <div class="des"></div>
-    </a>
-  </div>
+      // Add click event listener to toggle the class and save the clicked state
+      div.addEventListener("click", function () {
+        this.classList.toggle("clicked");
+        const clicked = this.classList.contains("clicked");
+        localStorage.setItem(`block-${i}`, clicked ? "true" : "false");
+      });
+    }
+  </script>
 </body>
 </html>
