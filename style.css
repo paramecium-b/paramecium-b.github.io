@@ -51,6 +51,7 @@ span {
 .navigation {
     margin-top: -8px;
     margin-left: 2rem;
+    margin-right: 2rem;
     width: fit-content;
 }
 
@@ -146,4 +147,53 @@ a:focus{
 a:active{
     color: #FFE500;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: .7rem;
+    }
+
+    .navigation {
+        font-size: .5rem;
+    }
+
+    .header {
+        font-size: 3.2rem;
+    }
+    
+    .repository {
+        width: 84rem;
+        text-align: center;
+    }
+    .about {
+        flex-direction: column;
+    }
+
+    .text {
+        padding-left: 0px;
+    }
+   
+    video {
+        width: 310px;
+    }
+
+    .introVideo {
+        padding-bottom: 1rem;
+    }
+
+    .block {
+        width: 84vw;
+    }
+
+    .block.clicked {
+        width: 84vw;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
 }
