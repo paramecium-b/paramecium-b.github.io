@@ -220,6 +220,10 @@ a:active{
 }
 
 @media screen and (min-width: 790px) and (max-width: 1000px) {
+    html {
+        font-size: .7rem;
+    }
+    
     .item-d {
         grid-column: 6 / span 1;
         grid-row: 4 / 5;
