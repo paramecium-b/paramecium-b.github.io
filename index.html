@@ -7,89 +7,173 @@
     <title>repository</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body id="bg">
-  <div class="title navigation">
-    <button><a href="https://paramecium-b.github.io">DREAM [F] LAB <span>* repository</span></a></button>
-    <button><a href="#about">ABOUT</a></button>
-    <button><a href="#index">INDEX</a></button>
-    <button><a href="#contact">CONTACT</a></button>
-  </div>
-  <!-- <section class="header">
-    DREAM [F] LAB
-  </section> -->
-  <section class="body">
-    <div class="about" id="about">
-      <div class="introVideo">
-        <video width="900" height="auto" controls>
-          <source src="./imgs/video.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="about-text">
-        <div class="title">
-          &nbsp;&nbsp;Introduction of <em>DREAM [F] LAB</em>
-        </div>
-        <div class="text">
-          <em>DREAM [F] LAB</em> is an ongoing web directory that explores the borders between Dream and Reality. It documents my most memorable dreams using visual and auditory stimuli. Make your way through the dreams using the index below, or use the "next" button at the end of each dream entries to move back/forward. <br>
-          <br>
-          Watch the film to the left for an introduction to <em>DREAM [F] LAB</em>. (No sound)<br>
-          <br>
-          <span>[The video retells the dream of a random subject whom the researchers monitored. They were shown as an introverted, anti-social person who willingly trapped themselves inside the sweet façade of their bedroom until it collapsed. It is hinted that an unnatural force interfered with their dream. The subtitle is a researcher's perspective, in which they explain the evolution of a dream in a cold, neutral tone.]</span><br>
-          <br>
-          <em>DREAM [F] LAB</em> is an extension of this film I did for Time class as a Parsons freshman, presenting itself as the researcher's log.<br>
-          <br>
-          This website runs best on Chrome desktop. Certain effects might fail to load if run on other browsers.<br><br>
+  <div class="container">
+    <div class="item-dl">DREAM [F] LAB</div>
+    <div id="currentDate" class="item-date"></div>
+    <div id="currentTime" class="item-time"></div>
+    <div class="item-user">@VISITOR_216</div>
 
-        </div>
-      </div>
+    <div class="item-p tag">/PRELOGUE</div>
+    <div class="item-iv">INTRODUCTORY VIDEO</div>
+
+    <div class="item-d tag">/DISPLAY</div>
+    <div class="item-video">
+      <video autoplay controls>
+        <source src="/imgs/dream-lab-3.mp4" type="video/mp4"/>
+      </video>
     </div>
-    <div class="index" id="index">
-      <div class="repository">Repository</div>
-      <a href="entries/entry1/index.html"><div class="block">
-        The Glass Staircase
-      </div></a>
-      <a href="entries/entry2/index.html"><div class="block">The Portrait Hallway</div></a>
-      <a href="entries/entry3/index.html"><div class="block">He who came to save me</div></a>
-      <a href="entries/entry4/index.html"><div class="block">Cat by the Beach</div></a>
-      <a href="entries/entry5/index.html"><div class="block">Apocalypse</div></a>
-      <a href="entries/entry6/index.html"><div class="block">Dream in a Dream</div></a>
-      <a href="entries/entry7/index.html"><div class="block">i come home, just to visit</div></a>
-      <a href="entries/entry8/index.html"><div class="block">Maze</div></a>
-      <a href="entries/entry9/index.html"><div class="block">Parallel Universe</div></a>
-      <a href="entries/entry10/index.html"><div class="block">0725</div></a>
+
+    <div class="item-tt tag">/TITLE</div>
+    <div class="item-dt tag">/DATE</div>
+    <div class="item-n tag">/№</div>
+
+    <a href="./entries/entry1/index.html" id="e1" class="entries">
+        <div class="e">THE GLASS STAIRCASE</div>
+        <div class="e-date">09/01/2022</div>
+        <div class="e-n">0001</div>
+    </a>
+
+    <a href="./entries/entry2/index.html" id="e2" class="entries">
+      <div class="e">THE PORTRAIT HALLWAY</div>
+      <div class="e-date">09/08/2022</div>
+      <div class="e-n">0002</div>
+    </a>
+
+    <a href="./entries/entry3/index.html" id="e3" class="entries">
+      <div class="e">HE WHO CAME TO SAVE ME</div>
+      <div class="e-date">09/15/2022</div>
+      <div class="e-n">0003</div>
+    </a>
+
+    <a href="./entries/entry4/index.html" id="e4" class="entries">
+      <div class="e">CAT BY THE BEACH</div>
+      <div class="e-date">09/22/2022</div>
+      <div class="e-n">0004</div>
+    </a>
+
+    <a href="./entries/entry5/index.html" id="e5" class="entries">
+      <div class="e">APOCALYPSE</div>
+      <div class="e-date">09/29/2022</div>
+      <div class="e-n">0005</div>
+    </a>
+
+    <a href="./entries/entry6/index.html" id="e6" class="entries">
+      <div class="e">DREAM IN A DREAM</div>
+      <div class="e-date">10/06/2022</div>
+      <div class="e-n">0006</div>
+    </a>
+
+    <a href="./entries/entry7/index.html" id="e7" class="entries">
+      <div class="e">MAZE</div>
+      <div class="e-date">10/13/2022</div>
+      <div class="e-n">0007</div>
+    </a>
+
+    <a href="./entries/entry8/index.html" id="e8" class="entries">
+      <div class="e">I COME HOME, JUST TO VISIT</div>
+      <div class="e-date">10/20/2022</div>
+      <div class="e-n">0008</div>
+    </a>
+
+    <a href="./entries/entry9/index.html" id="e9" class="entries">
+      <div class="e">PARALLEL UNIVERSE</div>
+      <div class="e-date">10/27/2022</div>
+      <div class="e-n">0009</div>
+    </a>
+
+    <div id="e10" class="entries">
+      <div class="e">SEX AND JEALOUSY</div>
+      <div class="e-date">04/16/2023</div>
+      <div class="e-n">0010</div>
     </div>
-  </section>
-  <footer id="contact" class="title">
-    <div>If anything goes wrong, contact Anna for maintenance:</div>
-    <div><a href="https://www.instagram.com/annnnnabui/">@annnnnabui</a></div>
-    <div><a href="mailto:buip150@newschool.edu?subject=Bug%20found%20on%20Dream%20Lab">buip150@newschool.edu</a></div>
-  </footer>
+
+    <div id="e11" class="entries">
+      <div class="e">FOREVER IS TEMPORARY</div>
+      <div class="e-date">11/10/2023</div>
+      <div class="e-n">0011</div>
+    </div>
+
+    <div id="e12" class="entries">
+      <div class="e">HORMONE, PREGNANCY, MOTHERHOOD</div>
+      <div class="e-date">12/23/2023</div>
+      <div class="e-n">0012</div>
+    </div>
+
+    <div id="e13" class="entries">
+      <div class="e">THE YOU IN MY MEMORIES</div>
+      <div class="e-date">12/27/2023</div>
+      <div class="e-n">0013</div>
+    </div>
+
+    <div id="e14" class="entries">
+      <div class="e">CIGARETTES</div>
+      <div class="e-date">02/09/2024</div>
+      <div class="e-n">0014</div>
+    </div>
+
+    <div id="e15" class="entries">
+      <div class="e">ETERNAL, IN THIS MOMENT</div>
+      <div class="e-date">08/08/2024</div>
+      <div class="e-n">0015</div>
+    </div>
+
+    <div id="e16" class="entries">
+      <div class="e">LOGGIN OFF</div>
+      <div class="e-date">07/05/2025</div>
+      <div class="e-n">0016</div>
+    </div>
+
+    <div class="subtext tag">
+      DREAM [F] LAB is an ongoing web directory that explores the borders between Dream and Reality. It documents my most memorable dreams using visual and auditory stimuli, THOUGH IT HAS SLOWLY EVOLVED INTO A DIGITAL DIARY THAT I KEEP GROWING UP OVER THE YEARS. Make your way through the dreams using the index ABOVE, or use the "next" button at the end of each dream entries to move back/forward. DREAM [F] LAB is an extension of A film I did for Time class as a Parsons freshman, presenting itself as the researcher's log.This website runs best on Chrome desktop. Certain effects might fail to load if run on other browsers. VIEW ON DESKTOP FOR THE BEST EXPERIENCE. ENABLE JAVASCRIPT FOR EFFECTS TO LOAD EFFICIENTLY. CONTACT PHUONGANHBUI.ANNA@GMAIL.COM IF SITE BREAKS.
+    </div>
+  </div>
+
+
+  <div id="mobile">
+    VIEW ON DESKTOP FOR THE BEST EXPERIENCE.
+  </div>
+
 
   <script>
-    const divs = document.getElementsByClassName("block");
+    function updateDateTime() {
+      const now = new Date();
 
-    // background color
-    let gValue = 0;
+      const optionDate = {year:'numeric', month:'2-digit', day:'2-digit' };
+      const formattedDate = now.toLocaleDateString(undefined, optionDate);
 
-    for (let i = 0; i < divs.length; i++) {
-      const div = divs[i];
-      const colorCode = `rgb(223, ${gValue}, 255)`;
-      div.style.backgroundColor = colorCode;
-      gValue += 10;
+      const optionTime = { hour:'2-digit', minute: '2-digit'};
+      const formattedTime = now.toLocaleTimeString(undefined, optionTime)
 
-      // Check if the div was previously clicked and apply the appropriate style
-      const isClicked = localStorage.getItem(`block-${i}`);
-      if (isClicked === "true") {
-        div.classList.add("clicked");
-      }
-
-      // Add click event listener to toggle the class and save the clicked state
-      div.addEventListener("click", function () {
-        this.classList.toggle("clicked");
-        const clicked = this.classList.contains("clicked");
-        localStorage.setItem(`block-${i}`, clicked ? "true" : "false");
-      });
+      document.getElementById('currentDate').innerHTML = `${formattedDate}`;
+      document.getElementById('currentTime').innerHTML = `${formattedTime}`;
     }
+
+    updateDateTime();
+
+    setInterval(updateDateTime, 60000);
+
+    const entries = document.querySelectorAll('.entries');
+
+    entries.forEach((entry) => {
+      entry.addEventListener('mouseenter', () => {
+        entries.forEach((other) => {
+          if (other !== entry) {
+            other.style.opacity = '0.25';
+          }
+        });
+      });
+
+      entry.addEventListener('mouseleave', () => {
+        entries.forEach((other) => {
+          other.style.opacity = '1';
+        });
+      });
+    });
   </script>
 </body>
 </html>
